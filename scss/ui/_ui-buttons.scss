@@ -1,0 +1,22 @@
+.buttons{
+    padding: 10px 45px;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+.main-button{
+    background-color: #fb6470;
+    border: #fb6470;
+}
+.secondary-button{
+
+    background-color: #32bec7;
+    border: #32bec7;
+}
+@media (max-width: 480px){
+    .buttons{
+        min-width: 100px;
+        width: 40vw;
+    }
+}

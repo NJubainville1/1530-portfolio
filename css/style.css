@@ -1,0 +1,262 @@
+/* 
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+/*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* html, html:before, html:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+audio {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table td,
+table th {
+  padding: 0;
+  text-align: left;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+small, .text_small {
+  font-size: 0.667em;
+}
+
+/* .fixed {
+    // font-family: $fixed-font-family;
+    // font-size: $fixed-font-size;
+    // line-height: $fixed-line-height;
+}
+ */
+.quiet {
+  color: cornflowerblue;
+}
+
+.loud, .bold {
+  color: tomato;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.block-margins {
+  margin: 1em 0;
+}
+
+.unordered-list {
+  list-style-type: disc;
+}
+
+.ordered-list {
+  list-style: decimal;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.25rem 1rem;
+  background: #353541;
+}
+
+.site-nav .menu-icon {
+  width: 2rem;
+}
+
+.page-header {
+  padding: calc(2rem + 3vh) 0;
+  background: #353541;
+  color: white;
+  text-align: center;
+}
+
+.page-header img {
+  max-width: 298px;
+  width: 60%;
+  margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  font-size: calc(20px + 3vw);
+  line-height: calc(20px + 3vw);
+}
+
+.page-header p {
+  font-size: calc(12px + 1vw);
+  color: #a1a1a5;
+}
+
+.buttons {
+  padding: 10px 45px;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+.main-button {
+  background-color: #fb6470;
+  border: #fb6470;
+}
+
+.secondary-button {
+  background-color: #32bec7;
+  border: #32bec7;
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    min-width: 100px;
+    width: 40vw;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-center-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  fill: white;
+  width: 35px;
+}
+/*# sourceMappingURL=style.css.map */

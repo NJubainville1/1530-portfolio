@@ -1,0 +1,38 @@
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    background: #353541;
+
+    .menu-icon {
+        width: 2rem;
+    }
+}
+
+    // .mobile-settings-icon {
+    //     width: 8px;
+    // }
+
+    // .icon-view {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+
+    // @media (min-width: 690px) {
+    //     .list-view {
+    //         display: flex;
+    //         justify-content: space-between;
+    //         max-width: 960px;
+    //         margin: 0 auto;
+
+    //         li {
+    //             margin: 0 1rem;
+    //         }
+    //     }
+
+    //     .icon-view {
+    //         display: none;
+    //     }
+    // }

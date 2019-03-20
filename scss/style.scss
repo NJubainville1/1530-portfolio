@@ -1,0 +1,30 @@
+@import "vars/index";
+@import "functions/index";
+@import "mixins/index";
+@import "init/index";
+@import "typography/index";
+@import "ui/index";
+
+
+.text-center{
+    text-align: center;
+}
+.flex-center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    fill: white;
+    width: 35px;
+}
+.skills-header{
+    
+
+}

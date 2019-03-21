@@ -2,37 +2,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
     background: #353541;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 
     .menu-icon {
         width: 2rem;
     }
+    li, .github-link{
+        color: #cacacc;
+    }
+    .github-link:hover{
+        color: #32bec7;
+        text-decoration: none;
+    }
 }
-
-    // .mobile-settings-icon {
-    //     width: 8px;
-    // }
-
-    // .icon-view {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-
-    // @media (min-width: 690px) {
-    //     .list-view {
-    //         display: flex;
-    //         justify-content: space-between;
-    //         max-width: 960px;
-    //         margin: 0 auto;
-
-    //         li {
-    //             margin: 0 1rem;
-    //         }
-    //     }
-
-    //     .icon-view {
-    //         display: none;
-    //     }
-    // }
+.mobile-sub-menu{
+    position: fixed;
+    top:3rem;
+    background:#353541;
+    color: white;
+    padding: 1rem;
+    width: 100vw;
+    height:55vh;
+    top: -55vh;
+    border-bottom:2px solid grey;
+    text-align: left;
+    z-index: 2;
+  }
+  .mobile-sub-menu h2{
+    font-size: $h2;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+  }
+  .menu-link{
+    padding: 0.3rem; 
+    font-size: $h3;
+    color: white;
+    text-decoration: none;
+  }
+  .mobile-menu-links a:hover{
+    color: black;
+    text-decoration: underline;
+  }

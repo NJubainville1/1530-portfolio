@@ -1,127 +1,64 @@
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
-    content: $content;
-    display: $display;
-    position: $pos;
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: start;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-center-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  fill: white;
+  width: 35px;
+  height: 40px;
+}
+.find-me-icon{
+  color: #889ea87e;
+  width: 15vw;
+}
+.line-icon{
+  fill: #fb6470;
+  // margin-left: 0;
+  // margin-right: 0;
+  width: 100px;
+}
+.container{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.unbound-container{
+  width: 85%;
 }
 
-@mixin responsive-ratio($x, $y, $pseudo: false) {
-    $padding: unquote(($y / $x) * 100 + '%');
 
-    @if $pseudo {
-        &:before {
-            @include pseudo($pos: relative);
-            width: 100%;
-            padding-top: $padding;
-        }
+.glow:hover {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6e6e6e, 0 0 40px #6e6e6e, 0 0 50px #6e6e6e, 0 0 60px #6e6e6e, 0 0 70px #6e6e6e;
     }
-
-    @else {
-        padding-top: $padding;
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #353535, 0 0 40px #353535, 0 0 50px #353535, 0 0 60px #353535, 0 0 70px #353535, 0 0 80px #353535;
     }
-}
-
-@mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-
-    @if $size {
-        font-size: $size;
-    }
-
-    @if $colour {
-        color: $colour;
-    }
-
-    @if $weight {
-        font-weight: $weight;
-    }
-
-    @if $lh {
-        line-height: $lh;
-    }
-}
-
-@mixin input-placeholder {
-    &.placeholder {
-        @content;
-    }
-
-    &:-moz-placeholder {
-        @content;
-    }
-
-    &::-moz-placeholder {
-        @content;
-    }
-
-    &:-ms-input-placeholder {
-        @content;
-    }
-
-    &::-webkit-input-placeholder {
-        @content;
-    }
-}
-
-$breakpoints: ("phone": 400px,
-"phone-wide": 480px,
-"phablet": 560px,
-"tablet-small": 640px,
-"tablet": 768px,
-"tablet-wide": 1024px,
-"desktop": 1248px,
-"desktop-wide": 1440px);
-
-@mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
-
-        @if $type==max {
-            $width: $width - 1px;
-        }
-
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
-    }
-}
-
-/* 
-.site-header {
-    padding: 2rem;
-    font-size: 1.8rem;
-    @include mq('tablet-wide') {
-        padding-top: 4rem;
-        font-size: 2.4rem;
-    }
-}
-*/
-
-@function z($name) {
-    @if index($z-indexes, $name) {
-        @return (length($z-indexes) - index($z-indexes, $name))+1;
-    }
-
-    @else {
-        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
-        @return null;
-    }
-}
-
-$z-indexes: ("outdated-browser",
-"modal",
-"site-header",
-"page-wrapper",
-"site-footer"
-);
-
-@mixin hardware($backface: true, $perspective: 1000) {
-    @if $backface {
-        backface-visibility: hidden;
-    }
-
-    perspective: $perspective;
-}
-
-@mixin bkg($color) {
-    background-color: $color;
-}
+  }

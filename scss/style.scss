@@ -1,30 +1,249 @@
-@import "vars/index";
 @import "functions/index";
 @import "mixins/index";
 @import "init/index";
 @import "typography/index";
 @import "ui/index";
 
-
-.text-center{
-    text-align: center;
-}
-.flex-center-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.flex-center-all{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon{
-    fill: white;
-    width: 35px;
+.skills-summary{
+    padding-top: 25px;
 }
 .skills-header{
+    font-size: $h2;
+    color: #3e3e3e;
+}
+.skills-title{
+    font-size: $h3;
+    font-weight: bold;
+    color: #746868;
+}
+.skills-round{
+    width: 50%;
+    max-width: 250px;
+    margin: 10px;
+}
+.find-me{
+    margin-top: 20px;
+    color: #3e3e3e79;
+}
+.find-me-header{
+    font-size: $h2;
+}
+.find-me-web{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.find-me-web-split{
+    width: 33%;
+}
+.work-header{
+    font-size: $h2;    
+}
+.work-briefing{
+    color: #333333c0;
+}
+.job-experience-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.job-experience-tile{
+    width: 85%;
+    max-width: 375px;
+    background-color: #7ac943;
+    color: white;
+    padding: 10px;
+    position: relative;
+    border-radius: .4em;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.job-experience-tile:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 2em solid transparent;
+	border-top: 0;
+    z-index: 1;
+}
+.job-green{
+    margin-left: 1rem;    
+}
+.job-green:after{
+    border-right-color: #7ac943;
+    border-left: 0;
+    margin-top: -4em;
+    margin-left: -2em;
+    left: 0;
+}
+.job-blue{
+    background-color: #3fa9f5;
+    margin-right: 1rem;
+}
+.job-blue:after{
+    border-right: 0;
+    border-left-color: #3fa9f5;
+    margin-top: -4em;
+    margin-right: -2em;	
+    right: 0;
+}
+.job-title{
+    font-size: $h4;
+    margin-bottom: 10px;
+}
+.job-range{
+    font-size: $h5;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+.education{
+    background-color: #f4f1f4;
+    padding: 15px 0 15px 0;
+}
+.education-head{
+    font-size: $h2;
+}
+.education-specifics{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #353541;
+    color: white;
+    text-align: left;
+    width: 85%;
+    max-width: 480px;
+    padding: 10px;
+    border-radius: .4em;
+    margin-bottom: 20px;
+}
+.education-type{
+    font-size: $h3;
+}
+.education-range{
+    font-size: $h4;
+    text-transform: uppercase;
+    color: #fb6470;
+    margin-top: 0;
+}
+.education-url{
+    font-size: $h5;
+    margin: 0;
+    color: #89898e;
+}
+.education-program,.education-institute{
+    margin: 0;
+    color: #5a5a62;
+}
+.education-institute{
+    margin-bottom: 10px;
+}
+.contact-section{
+    padding-top: 50px;
+}
+.contact-head{
+    font-size: $h2;
+}
+.contact-fields{    
+    text-align: left;
+    align-items: center;
+    label{
+        margin: 10px 0 10px 10px;
+        width: 85%;
+        color: #3e3e3ed0;
+        font-style: italic;
+    }
+    input{
+        width: 85%;
+        border: 1px solid black;
+        border-radius: .4em;
+        height: 50px;
+    }
+    .input-message{
+        height: 100px;
+        margin-bottom: 25px;
+    }
+}
+footer{
+    font-size: 0.75rem;    
+    margin: 50px 0 40px 0;
     
-
+    .copyright-info, .copyright-email{
+        margin: 0;
+    }
+}
+.large-view{
+    display: none;
+}
+@media(min-width: 480px){
+    .large-view{
+        display: block;
+    }
+    .small-view{
+        display: none;
+    }
+    h2{
+        font-weight: bold;
+    }
+    .skills-summary{
+        padding-bottom: 75px;
+    }
+    .skills-region{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skills-single{
+        width: 50%;
+    }
+    .find-me{
+        background: #889ea8;
+        padding: 30px 0 50px 0;
+        color: #cbd5d9;
+        .find-me-header{
+            color: white;
+        }
+        .find-me-icon{
+            color: #cbd5d9;
+            max-width: 60px;
+            max-height: 60px;
+        }
+        .find-me-web{
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .find-me-web-split{
+            width: 18%;
+        }
+    }
+    .work-experience{
+        margin: 5rem 0;
+                
+        .work-header{
+            color: #aba9a9;     
+            margin-bottom: 2rem;       
+        }
+        .job-experience-container{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-self: flex-end;            
+        }
+    }
+    .education{
+        padding: 5rem 0;
+        
+        .edu-info{
+            padding: 1rem 0;
+            color: #a6a4a6;
+        }
+        .education-specifics{
+            margin-left: 0;
+        }
+    }
+    .education-specifics:nth-child(even){
+        margin-left: auto;
+        margin-right: 0;
+    }
 }

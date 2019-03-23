@@ -54,6 +54,15 @@
 .find-me-icon {
   color: #889ea87e;
   width: 15vw;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+}
+
+.find-me-icon:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .line-icon {
@@ -244,14 +253,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .mobile-sub-menu h2 {
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2vw);
   padding-bottom: 20px;
   border-bottom: 1px solid #e8e8e8;
 }
 
 .menu-link {
   padding: 0.3rem;
-  font-size: calc(20px + 1vw);
+  font-size: calc(18px + 1vw);
   color: white;
   text-decoration: none;
 }
@@ -303,9 +312,20 @@ h1, h2, h3, h4, h5 {
   max-width: 275px;
   width: 40vw;
   cursor: pointer;
+  font-size: calc(8px + 1vw);
 }
 
 .main-button {
+  background-color: #fb6470;
+  border: #fb6470;
+}
+
+.main-button:hover {
+  background-color: #32bec7;
+  border: #32bec7;
+}
+
+.secondary-button:hover {
   background-color: #fb6470;
   border: #fb6470;
 }
@@ -336,12 +356,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .skills-header {
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2vw);
   color: #3e3e3e;
 }
 
 .skills-title {
-  font-size: calc(20px + 1vw);
+  font-size: calc(18px + 1vw);
   font-weight: bold;
   color: #746868;
 }
@@ -358,7 +378,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .find-me-header {
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2vw);
 }
 
 .find-me-web {
@@ -376,7 +396,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .work-header {
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2vw);
 }
 
 .work-briefing {
@@ -445,15 +465,21 @@ h1, h2, h3, h4, h5 {
 }
 
 .job-title {
-  font-size: calc(15px + 1vw);
+  font-size: calc(14px + 1vw);
   margin-bottom: 10px;
 }
 
 .job-range {
-  font-size: calc(10px + 1vw);
+  font-size: calc(8px + 1vw);
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0px;
+}
+
+.job-info {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 10px;
 }
 
 .education {
@@ -462,7 +488,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .education-head {
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2vw);
 }
 
 .education-specifics {
@@ -479,18 +505,18 @@ h1, h2, h3, h4, h5 {
 }
 
 .education-type {
-  font-size: calc(20px + 1vw);
+  font-size: calc(18px + 1vw);
 }
 
 .education-range {
-  font-size: calc(15px + 1vw);
+  font-size: calc(14px + 1vw);
   text-transform: uppercase;
   color: #fb6470;
   margin-top: 0;
 }
 
 .education-url {
-  font-size: calc(10px + 1vw);
+  font-size: calc(8px + 1vw);
   margin: 0;
   color: #89898e;
 }
@@ -509,7 +535,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .contact-head {
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2vw);
 }
 
 .contact-fields {
@@ -628,6 +654,50 @@ footer .copyright-info, footer .copyright-email {
   .education-specifics:nth-child(even) {
     margin-left: auto;
     margin-right: 0;
+  }
+}
+
+@media (min-width: 780px) {
+  .skills-single {
+    width: 25%;
+  }
+  .skills-single p {
+    width: 90%;
+  }
+  .tagline {
+    font-size: 1.2rem;
+  }
+  .find-me .find-me-icon {
+    color: #cbd5d9;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .large-view-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .large-view {
+    font-size: 20px;
+  }
+  .skills-round {
+    width: 60%;
+  }
+  .tagline {
+    padding: 10px;
+  }
+  .job-experience-tile {
+    max-width: 600px;
+    padding: 3vh 1.5vw;
+  }
+  .education-specifics {
+    max-width: 50%;
+    padding: 3vh 1.5vw;
+  }
+  .contact-section {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

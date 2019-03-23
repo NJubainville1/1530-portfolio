@@ -27,6 +27,12 @@
 .find-me-icon{
   color: #889ea87e;
   width: 15vw;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+.find-me-icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 .line-icon{
   fill: #fb6470;

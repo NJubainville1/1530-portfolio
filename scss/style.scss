@@ -99,6 +99,11 @@
     text-transform: uppercase;
     margin-top: 0px;
 }
+.job-info{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
 .education{
     background-color: #f4f1f4;
     padding: 15px 0 15px 0;
@@ -219,7 +224,7 @@ footer{
     }
     .work-experience{
         margin: 5rem 0;
-                
+
         .work-header{
             color: #aba9a9;     
             margin-bottom: 2rem;       
@@ -246,4 +251,51 @@ footer{
         margin-left: auto;
         margin-right: 0;
     }
+}
+@media (min-width: 780px){
+    .skills-single{
+        width: 25%;
+
+        p{            
+            width: 90%;
+        }
+    }
+    .tagline{
+        font-size: 1.2rem;
+    }
+    .find-me{
+        .find-me-icon{
+            color: #cbd5d9;
+            max-width: 100px;
+            max-height: 100px;
+        }
+    }
+    .large-view-container{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .large-view{
+        font-size: 20px;
+    }    
+    .skills-round{
+        width: 60%;
+    }
+    .tagline{
+        padding: 10px;
+    }
+    .job-experience-tile{
+        max-width: 600px;
+        padding: 3vh 1.5vw;
+    }
+    .education-specifics{
+        max-width: 50%;
+        padding: 3vh 1.5vw;
+    }
+    .contact-section{
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

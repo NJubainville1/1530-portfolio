@@ -8,8 +8,17 @@
     max-width: 275px;
     width: 40vw;
     cursor: pointer;
+    font-size: $h5;
 }
 .main-button{
+    background-color: #fb6470;
+    border: #fb6470;
+}
+.main-button:hover{
+    background-color: #32bec7;
+    border: #32bec7;
+}
+.secondary-button:hover{
     background-color: #fb6470;
     border: #fb6470;
 }
